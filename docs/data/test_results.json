@@ -1,0 +1,1929 @@
+{
+  "suite": {
+    "ran": 72,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 123.9,
+    "modules": {
+      "test_e2e": {
+        "tests": 3,
+        "failed": 0
+      },
+      "test_interview": {
+        "tests": 13,
+        "failed": 0
+      },
+      "test_jobs": {
+        "tests": 10,
+        "failed": 0
+      },
+      "test_privacy": {
+        "tests": 15,
+        "failed": 0
+      },
+      "test_projects": {
+        "tests": 6,
+        "failed": 0
+      },
+      "test_readiness_and_ai": {
+        "tests": 11,
+        "failed": 0
+      },
+      "test_resume_review": {
+        "tests": 14,
+        "failed": 0
+      }
+    },
+    "failed_tests": []
+  },
+  "resume": {
+    "resumes": 20,
+    "checks_per_resume": 16,
+    "decisions": 320,
+    "tp": 28,
+    "fp": 0,
+    "fn": 0,
+    "tn": 292,
+    "precision": 1.0,
+    "recall": 1.0,
+    "agreement": 1.0,
+    "rows": [
+      {
+        "file": "resume_01.pdf",
+        "defects": [],
+        "expected": [],
+        "flagged": [],
+        "missed": [],
+        "extra": [],
+        "score": 100.0
+      },
+      {
+        "file": "resume_02.pdf",
+        "defects": [
+          "two_pages"
+        ],
+        "expected": [
+          "R1"
+        ],
+        "flagged": [
+          "R1"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 86.7
+      },
+      {
+        "file": "resume_03.pdf",
+        "defects": [
+          "mixed_fonts"
+        ],
+        "expected": [
+          "R2.1"
+        ],
+        "flagged": [
+          "R2.1"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 97.0
+      },
+      {
+        "file": "resume_04.pdf",
+        "defects": [
+          "misaligned_bullets"
+        ],
+        "expected": [
+          "R2.2"
+        ],
+        "flagged": [
+          "R2.2"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 97.0
+      },
+      {
+        "file": "resume_05.pdf",
+        "defects": [
+          "mixed_dates"
+        ],
+        "expected": [
+          "R2.3"
+        ],
+        "flagged": [
+          "R2.3"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 97.0
+      },
+      {
+        "file": "resume_06.pdf",
+        "defects": [
+          "typos"
+        ],
+        "expected": [
+          "R3.1"
+        ],
+        "flagged": [
+          "R3.1"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 94.0
+      },
+      {
+        "file": "resume_07.pdf",
+        "defects": [
+          "weak_bullets"
+        ],
+        "expected": [
+          "R4",
+          "R7.1",
+          "R7.2"
+        ],
+        "flagged": [
+          "R4",
+          "R7.1",
+          "R7.2"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 75.3
+      },
+      {
+        "file": "resume_08.pdf",
+        "defects": [
+          "no_metrics"
+        ],
+        "expected": [
+          "R4",
+          "R7.2"
+        ],
+        "flagged": [
+          "R4",
+          "R7.2"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 89.8
+      },
+      {
+        "file": "resume_09.pdf",
+        "defects": [
+          "project_links_missing"
+        ],
+        "expected": [
+          "R4"
+        ],
+        "flagged": [
+          "R4"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 95.7
+      },
+      {
+        "file": "resume_10.pdf",
+        "defects": [
+          "no_github_link",
+          "no_leetcode_link"
+        ],
+        "expected": [
+          "R5"
+        ],
+        "flagged": [
+          "R5"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 92.5
+      },
+      {
+        "file": "resume_11.pdf",
+        "defects": [
+          "no_cocurricular"
+        ],
+        "expected": [
+          "R6"
+        ],
+        "flagged": [
+          "R6"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 92.0
+      },
+      {
+        "file": "resume_12.pdf",
+        "defects": [
+          "skills_as_image"
+        ],
+        "expected": [
+          "R8.2"
+        ],
+        "flagged": [
+          "R8.2"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 97.0
+      },
+      {
+        "file": "resume_13.pdf",
+        "defects": [
+          "two_column"
+        ],
+        "expected": [
+          "R8.4"
+        ],
+        "flagged": [
+          "R8.4"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 98.5
+      },
+      {
+        "file": "resume_14.pdf",
+        "defects": [
+          "nonstandard_headings"
+        ],
+        "expected": [
+          "R8.3"
+        ],
+        "flagged": [
+          "R8.3"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 96.0
+      },
+      {
+        "file": "resume_15.pdf",
+        "defects": [
+          "inconsistent_spacing",
+          "tiny_margins"
+        ],
+        "expected": [
+          "R2.4"
+        ],
+        "flagged": [
+          "R2.4"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 97.0
+      },
+      {
+        "file": "resume_16.pdf",
+        "defects": [
+          "tech_casing"
+        ],
+        "expected": [
+          "R3.2"
+        ],
+        "flagged": [
+          "R3.2"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 94.0
+      },
+      {
+        "file": "resume_17.pdf",
+        "defects": [
+          "plain_links"
+        ],
+        "expected": [
+          "R4",
+          "R5"
+        ],
+        "flagged": [
+          "R4",
+          "R5"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 91.6
+      },
+      {
+        "file": "resume_18.pdf",
+        "defects": [
+          "icon_font",
+          "table"
+        ],
+        "expected": [
+          "R8.4"
+        ],
+        "flagged": [
+          "R8.4"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 98.0
+      },
+      {
+        "file": "resume_19.pdf",
+        "defects": [
+          "two_pages",
+          "typos",
+          "weak_bullets"
+        ],
+        "expected": [
+          "R1",
+          "R3.1",
+          "R4",
+          "R7.1",
+          "R7.2"
+        ],
+        "flagged": [
+          "R1",
+          "R3.1",
+          "R4",
+          "R7.1",
+          "R7.2"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 71.2
+      },
+      {
+        "file": "resume_20.pdf",
+        "defects": [
+          "mixed_dates",
+          "no_cocurricular",
+          "photo"
+        ],
+        "expected": [
+          "R2.3",
+          "R6"
+        ],
+        "flagged": [
+          "R2.3",
+          "R6"
+        ],
+        "missed": [],
+        "extra": [],
+        "score": 89.0
+      }
+    ],
+    "per_check": {
+      "R1": {
+        "tn": 18,
+        "tp": 2
+      },
+      "R2.1": {
+        "tn": 19,
+        "tp": 1
+      },
+      "R2.2": {
+        "tn": 19,
+        "tp": 1
+      },
+      "R2.3": {
+        "tn": 18,
+        "tp": 2
+      },
+      "R2.4": {
+        "tn": 19,
+        "tp": 1
+      },
+      "R3.1": {
+        "tn": 18,
+        "tp": 2
+      },
+      "R3.2": {
+        "tn": 19,
+        "tp": 1
+      },
+      "R4": {
+        "tn": 15,
+        "tp": 5
+      },
+      "R5": {
+        "tn": 18,
+        "tp": 2
+      },
+      "R6": {
+        "tn": 18,
+        "tp": 2
+      },
+      "R7.1": {
+        "tn": 18,
+        "tp": 2
+      },
+      "R7.2": {
+        "tn": 17,
+        "tp": 3
+      },
+      "R8.1": {
+        "tn": 20
+      },
+      "R8.2": {
+        "tn": 19,
+        "tp": 1
+      },
+      "R8.3": {
+        "tn": 19,
+        "tp": 1
+      },
+      "R8.4": {
+        "tn": 18,
+        "tp": 2
+      }
+    },
+    "avg_seconds": 0.21
+  },
+  "consistency": {
+    "runs": 5,
+    "resumes": 20,
+    "max_spread": 0.0,
+    "all_verdicts_identical": true,
+    "rows": [
+      {
+        "file": "resume_01.pdf",
+        "scores": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_02.pdf",
+        "scores": [
+          86.7,
+          86.7,
+          86.7,
+          86.7,
+          86.7
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_03.pdf",
+        "scores": [
+          97.0,
+          97.0,
+          97.0,
+          97.0,
+          97.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_04.pdf",
+        "scores": [
+          97.0,
+          97.0,
+          97.0,
+          97.0,
+          97.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_05.pdf",
+        "scores": [
+          97.0,
+          97.0,
+          97.0,
+          97.0,
+          97.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_06.pdf",
+        "scores": [
+          94.0,
+          94.0,
+          94.0,
+          94.0,
+          94.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_07.pdf",
+        "scores": [
+          75.3,
+          75.3,
+          75.3,
+          75.3,
+          75.3
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_08.pdf",
+        "scores": [
+          89.8,
+          89.8,
+          89.8,
+          89.8,
+          89.8
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_09.pdf",
+        "scores": [
+          95.7,
+          95.7,
+          95.7,
+          95.7,
+          95.7
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_10.pdf",
+        "scores": [
+          92.5,
+          92.5,
+          92.5,
+          92.5,
+          92.5
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_11.pdf",
+        "scores": [
+          92.0,
+          92.0,
+          92.0,
+          92.0,
+          92.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_12.pdf",
+        "scores": [
+          97.0,
+          97.0,
+          97.0,
+          97.0,
+          97.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_13.pdf",
+        "scores": [
+          98.5,
+          98.5,
+          98.5,
+          98.5,
+          98.5
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_14.pdf",
+        "scores": [
+          96.0,
+          96.0,
+          96.0,
+          96.0,
+          96.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_15.pdf",
+        "scores": [
+          97.0,
+          97.0,
+          97.0,
+          97.0,
+          97.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_16.pdf",
+        "scores": [
+          94.0,
+          94.0,
+          94.0,
+          94.0,
+          94.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_17.pdf",
+        "scores": [
+          91.6,
+          91.6,
+          91.6,
+          91.6,
+          91.6
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_18.pdf",
+        "scores": [
+          98.0,
+          98.0,
+          98.0,
+          98.0,
+          98.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_19.pdf",
+        "scores": [
+          71.2,
+          71.2,
+          71.2,
+          71.2,
+          71.2
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      },
+      {
+        "file": "resume_20.pdf",
+        "scores": [
+          89.0,
+          89.0,
+          89.0,
+          89.0,
+          89.0
+        ],
+        "spread": 0.0,
+        "same_verdicts": true
+      }
+    ]
+  },
+  "iv_consistency": {
+    "runs": 5,
+    "scores": [
+      68.9,
+      68.9,
+      68.9,
+      68.9,
+      68.9
+    ],
+    "spread": 0.0
+  },
+  "repos": {
+    "repos": 10,
+    "expectations": 34,
+    "passed": 34,
+    "rows": [
+      {
+        "repo": "good_fullstack",
+        "expectations": [
+          {
+            "expectation": "README present = True",
+            "ok": true
+          },
+          {
+            "expectation": "setup steps in README = True",
+            "ok": true
+          },
+          {
+            "expectation": "screenshots in README = True",
+            "ok": true
+          },
+          {
+            "expectation": "high-severity secrets = 0",
+            "ok": true
+          },
+          {
+            "expectation": "junk files = 0",
+            "ok": true
+          },
+          {
+            "expectation": "tests found = True",
+            "ok": true
+          },
+          {
+            "expectation": "meaningful commits = True",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "seconds": 0.02,
+        "secrets": [],
+        "unredacted_values": 0
+      },
+      {
+        "repo": "no_readme",
+        "expectations": [
+          {
+            "expectation": "README present = False",
+            "ok": true
+          },
+          {
+            "expectation": "high-severity secrets = 0",
+            "ok": true
+          },
+          {
+            "expectation": "meaningful commits = False",
+            "ok": true
+          },
+          {
+            "expectation": "tests found = False",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "seconds": 0.02,
+        "secrets": [],
+        "unredacted_values": 0
+      },
+      {
+        "repo": "readme_no_setup",
+        "expectations": [
+          {
+            "expectation": "README present = True",
+            "ok": true
+          },
+          {
+            "expectation": "setup steps in README = False",
+            "ok": true
+          },
+          {
+            "expectation": "screenshots in README = False",
+            "ok": true
+          },
+          {
+            "expectation": "high-severity secrets = 0",
+            "ok": true
+          },
+          {
+            "expectation": "meaningful commits = False",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "seconds": 0.02,
+        "secrets": [],
+        "unredacted_values": 0
+      },
+      {
+        "repo": "aws_key_committed",
+        "expectations": [
+          {
+            "expectation": "at least N secrets found = 1",
+            "ok": true
+          },
+          {
+            "expectation": "secret type detected = aws_access_key",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "seconds": 0.02,
+        "secrets": [
+          [
+            "aws_access_key",
+            "high",
+            "AKIA\u2026B8ZK"
+          ]
+        ],
+        "unredacted_values": 0
+      },
+      {
+        "repo": "secret_in_history",
+        "expectations": [
+          {
+            "expectation": "at least N secrets found = 1",
+            "ok": true
+          },
+          {
+            "expectation": "secret found in git history = True",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "seconds": 0.02,
+        "secrets": [
+          [
+            "openai_key",
+            "high",
+            "sk-p\u2026cdEF"
+          ]
+        ],
+        "unredacted_values": 0
+      },
+      {
+        "repo": "node_modules_committed",
+        "expectations": [
+          {
+            "expectation": "junk files flagged = 2",
+            "ok": true
+          },
+          {
+            "expectation": ".gitignore present = False",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "seconds": 0.02,
+        "secrets": [],
+        "unredacted_values": 0
+      },
+      {
+        "repo": "web_upload",
+        "expectations": [
+          {
+            "expectation": "browser uploads detected = True",
+            "ok": true
+          },
+          {
+            "expectation": "meaningful commits = False",
+            "ok": true
+          },
+          {
+            "expectation": "organised folder structure = False",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "seconds": 0.02,
+        "secrets": [],
+        "unredacted_values": 0
+      },
+      {
+        "repo": "firebase_and_mongo",
+        "expectations": [
+          {
+            "expectation": "at least N secrets found = 1",
+            "ok": true
+          },
+          {
+            "expectation": "secret type detected = db_uri",
+            "ok": true
+          },
+          {
+            "expectation": "low-risk key reported as info = google_api_key",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "seconds": 0.02,
+        "secrets": [
+          [
+            "db_uri",
+            "high",
+            "mongodb+srv://asha:****@cluster0\u2026"
+          ],
+          [
+            "google_api_key",
+            "info",
+            "AIza\u20267890"
+          ]
+        ],
+        "unredacted_values": 0
+      },
+      {
+        "repo": "python_ml",
+        "expectations": [
+          {
+            "expectation": "tests found = True",
+            "ok": true
+          },
+          {
+            "expectation": "long function flagged = True",
+            "ok": true
+          },
+          {
+            "expectation": "high-severity secrets = 0",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "seconds": 0.02,
+        "secrets": [],
+        "unredacted_values": 0
+      },
+      {
+        "repo": "default_cra_readme",
+        "expectations": [
+          {
+            "expectation": "default template README = True",
+            "ok": true
+          },
+          {
+            "expectation": "hard-coded localhost flagged = True",
+            "ok": true
+          },
+          {
+            "expectation": "meaningful commits = False",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "seconds": 0.02,
+        "secrets": [],
+        "unredacted_values": 0
+      }
+    ]
+  },
+  "links": {
+    "cases": 9,
+    "passed": 9,
+    "rows": [
+      {
+        "case": "/good",
+        "problem": "nothing",
+        "results": [
+          {
+            "check": "PR2",
+            "want": "pass",
+            "got": "pass",
+            "ok": true
+          },
+          {
+            "check": "PR3",
+            "want": "pass",
+            "got": "pass",
+            "ok": true
+          },
+          {
+            "check": "PR4",
+            "want": "pass",
+            "got": "pass",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "engine": "playwright",
+        "error": null,
+        "seconds": 1.98
+      },
+      {
+        "case": "/jserror",
+        "problem": "uncaught JS error + missing image",
+        "results": [
+          {
+            "check": "PR2",
+            "want": "not-pass",
+            "got": "warn",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "engine": "playwright",
+        "error": null,
+        "seconds": 1.3
+      },
+      {
+        "case": "/notmobile",
+        "problem": "no viewport meta, fixed 1200px layout",
+        "results": [
+          {
+            "check": "PR3",
+            "want": "not-pass",
+            "got": "warn",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "engine": "playwright",
+        "error": null,
+        "seconds": 1.27
+      },
+      {
+        "case": "/cra",
+        "problem": "default Create React App placeholder",
+        "results": [
+          {
+            "check": "PR4",
+            "want": "not-pass",
+            "got": "warn",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "engine": "playwright",
+        "error": null,
+        "seconds": 1.28
+      },
+      {
+        "case": "/netlify404",
+        "problem": "Netlify 'Page not found'",
+        "results": [
+          {
+            "check": "PR2",
+            "want": "fail",
+            "got": "fail",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "engine": "playwright",
+        "error": null,
+        "seconds": 1.3
+      },
+      {
+        "case": "/error500",
+        "problem": "HTTP 500",
+        "results": [
+          {
+            "check": "PR2",
+            "want": "fail",
+            "got": "fail",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "engine": "playwright",
+        "error": null,
+        "seconds": 1.29
+      },
+      {
+        "case": "/unrelated",
+        "problem": "page about something else",
+        "results": [
+          {
+            "check": "PR4",
+            "want": "not-pass",
+            "got": "fail",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "engine": "playwright",
+        "error": null,
+        "seconds": 1.3
+      },
+      {
+        "case": "http://does-not-exist.invalid/",
+        "problem": "domain does not resolve",
+        "results": [
+          {
+            "check": "PR2",
+            "want": "fail",
+            "got": "fail",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "engine": "playwright",
+        "error": null,
+        "seconds": 0.08
+      },
+      {
+        "case": "http://127.0.0.1:9/",
+        "problem": "nothing listening on the port",
+        "results": [
+          {
+            "check": "PR2",
+            "want": "fail",
+            "got": "fail",
+            "ok": true
+          }
+        ],
+        "all_ok": true,
+        "engine": "playwright",
+        "error": null,
+        "seconds": 0.08
+      }
+    ]
+  },
+  "iv_rules": {
+    "mode": "rules",
+    "interviews": 5,
+    "llm_calls": 0,
+    "rows": [
+      {
+        "persona": "strong",
+        "provider": "mock",
+        "score": 95.6,
+        "status": "completed",
+        "questions": 25,
+        "minutes_used": 13.4,
+        "dimensions": {
+          "technical": 4.8,
+          "projects": 5.0,
+          "problem_solving": 5.0,
+          "communication": 4.8,
+          "behavioural": 3.7
+        },
+        "flags": [],
+        "redirects": 0,
+        "follow_ups": 11,
+        "hints": 1,
+        "scorer": "rules",
+        "scorer_runs": 0,
+        "wall_seconds": 0.0,
+        "has_transcript": true,
+        "weak_areas": [
+          "Behavioural / HR (3.7/5): Prepare 3 STAR stories (situation, task, action, result) about teamwork, failure and learning fast.",
+          "Technical knowledge (4.8/5): Revise core CS topics (DBMS, OS, OOP, DSA) and practise explaining each in 3\u20134 sentences with an example."
+        ]
+      },
+      {
+        "persona": "average",
+        "provider": "mock",
+        "score": 53.9,
+        "status": "completed",
+        "questions": 21,
+        "minutes_used": 9.2,
+        "dimensions": {
+          "technical": 3.1,
+          "projects": 0.8,
+          "problem_solving": 4.1,
+          "communication": 3.5,
+          "behavioural": 2.2
+        },
+        "flags": [],
+        "redirects": 0,
+        "follow_ups": 3,
+        "hints": 2,
+        "scorer": "rules",
+        "scorer_runs": 0,
+        "wall_seconds": 0.0,
+        "has_transcript": true,
+        "weak_areas": [
+          "Project depth (0.8/5): Prepare a 90-second walkthrough of each project: problem, architecture, your part, one hard bug, one metric.",
+          "Behavioural / HR (2.2/5): Prepare 3 STAR stories (situation, task, action, result) about teamwork, failure and learning fast."
+        ]
+      },
+      {
+        "persona": "weak",
+        "provider": "mock",
+        "score": 25.4,
+        "status": "completed",
+        "questions": 21,
+        "minutes_used": 7.2,
+        "dimensions": {
+          "technical": 1.7,
+          "projects": 0.5,
+          "problem_solving": 0.9,
+          "communication": 2.5,
+          "behavioural": 0.8
+        },
+        "flags": [],
+        "redirects": 0,
+        "follow_ups": 1,
+        "hints": 4,
+        "scorer": "rules",
+        "scorer_runs": 0,
+        "wall_seconds": 0.0,
+        "has_transcript": true,
+        "weak_areas": [
+          "Project depth (0.5/5): Prepare a 90-second walkthrough of each project: problem, architecture, your part, one hard bug, one metric.",
+          "Behavioural / HR (0.8/5): Prepare 3 STAR stories (situation, task, action, result) about teamwork, failure and learning fast."
+        ]
+      },
+      {
+        "persona": "rambler",
+        "provider": "mock",
+        "score": 52.6,
+        "status": "completed",
+        "questions": 21,
+        "minutes_used": 14.3,
+        "dimensions": {
+          "technical": 3.0,
+          "projects": 2.4,
+          "problem_solving": 2.0,
+          "communication": 3.0,
+          "behavioural": 2.8
+        },
+        "flags": [],
+        "redirects": 7,
+        "follow_ups": 6,
+        "hints": 0,
+        "scorer": "rules",
+        "scorer_runs": 0,
+        "wall_seconds": 0.0,
+        "has_transcript": true,
+        "weak_areas": [
+          "Problem solving (2.0/5): When you get a follow-up, think aloud: restate, give a simple approach, then improve it and state complexity.",
+          "Project depth (2.4/5): Prepare a 90-second walkthrough of each project: problem, architecture, your part, one hard bug, one metric."
+        ]
+      },
+      {
+        "persona": "injector",
+        "provider": "mock",
+        "score": 52.1,
+        "status": "completed",
+        "questions": 27,
+        "minutes_used": 10.6,
+        "dimensions": {
+          "technical": 3.3,
+          "projects": 1.8,
+          "problem_solving": 2.5,
+          "communication": 3.1,
+          "behavioural": 2.0
+        },
+        "flags": [
+          "injection_attempt"
+        ],
+        "redirects": 1,
+        "follow_ups": 5,
+        "hints": 5,
+        "scorer": "rules",
+        "scorer_runs": 0,
+        "wall_seconds": 0.0,
+        "has_transcript": true,
+        "weak_areas": [
+          "Project depth (1.8/5): Prepare a 90-second walkthrough of each project: problem, architecture, your part, one hard bug, one metric.",
+          "Behavioural / HR (2.0/5): Prepare 3 STAR stories (situation, task, action, result) about teamwork, failure and learning fast."
+        ]
+      }
+    ],
+    "ordering_ok": true
+  },
+  "iv_openai": {
+    "mode": "openai",
+    "interviews": 5,
+    "llm_calls": 128,
+    "rows": [
+      {
+        "persona": "strong",
+        "provider": "openai",
+        "score": 80.0,
+        "status": "completed",
+        "questions": 25,
+        "minutes_used": 13.3,
+        "dimensions": {
+          "technical": 4.0,
+          "projects": 4.0,
+          "problem_solving": 3.5,
+          "communication": 5.0,
+          "behavioural": 3.5
+        },
+        "flags": [],
+        "redirects": 0,
+        "follow_ups": 11,
+        "hints": 1,
+        "scorer": "openai",
+        "scorer_runs": 3,
+        "wall_seconds": 0.3,
+        "has_transcript": true,
+        "weak_areas": [
+          "Practise problem solving: explain with one concrete example each time."
+        ]
+      },
+      {
+        "persona": "average",
+        "provider": "openai",
+        "score": 50.5,
+        "status": "completed",
+        "questions": 21,
+        "minutes_used": 9.1,
+        "dimensions": {
+          "technical": 3.0,
+          "projects": 1.0,
+          "problem_solving": 3.0,
+          "communication": 3.5,
+          "behavioural": 2.5
+        },
+        "flags": [],
+        "redirects": 0,
+        "follow_ups": 3,
+        "hints": 2,
+        "scorer": "openai",
+        "scorer_runs": 3,
+        "wall_seconds": 0.2,
+        "has_transcript": true,
+        "weak_areas": [
+          "Practise projects: explain with one concrete example each time."
+        ]
+      },
+      {
+        "persona": "weak",
+        "provider": "openai",
+        "score": 34.0,
+        "status": "completed",
+        "questions": 21,
+        "minutes_used": 7.2,
+        "dimensions": {
+          "technical": 2.0,
+          "projects": 1.5,
+          "problem_solving": 1.0,
+          "communication": 2.5,
+          "behavioural": 1.5
+        },
+        "flags": [],
+        "redirects": 0,
+        "follow_ups": 1,
+        "hints": 4,
+        "scorer": "openai",
+        "scorer_runs": 3,
+        "wall_seconds": 0.2,
+        "has_transcript": true,
+        "weak_areas": [
+          "Practise problem solving: explain with one concrete example each time."
+        ]
+      },
+      {
+        "persona": "rambler",
+        "provider": "openai",
+        "score": 51.0,
+        "status": "completed",
+        "questions": 21,
+        "minutes_used": 14.3,
+        "dimensions": {
+          "technical": 3.0,
+          "projects": 2.0,
+          "problem_solving": 2.5,
+          "communication": 3.0,
+          "behavioural": 2.0
+        },
+        "flags": [],
+        "redirects": 7,
+        "follow_ups": 6,
+        "hints": 0,
+        "scorer": "openai",
+        "scorer_runs": 3,
+        "wall_seconds": 0.2,
+        "has_transcript": true,
+        "weak_areas": [
+          "Practise projects: explain with one concrete example each time."
+        ]
+      },
+      {
+        "persona": "injector",
+        "provider": "openai",
+        "score": 41.5,
+        "status": "completed",
+        "questions": 27,
+        "minutes_used": 10.5,
+        "dimensions": {
+          "technical": 2.5,
+          "projects": 1.5,
+          "problem_solving": 1.5,
+          "communication": 3.0,
+          "behavioural": 2.0
+        },
+        "flags": [
+          "injection_attempt"
+        ],
+        "redirects": 1,
+        "follow_ups": 5,
+        "hints": 5,
+        "scorer": "openai",
+        "scorer_runs": 3,
+        "wall_seconds": 0.2,
+        "has_transcript": true,
+        "weak_areas": [
+          "Practise projects: explain with one concrete example each time."
+        ]
+      }
+    ],
+    "ordering_ok": true
+  },
+  "iv_ollama": {
+    "mode": "ollama",
+    "interviews": 5,
+    "llm_calls": 128,
+    "rows": [
+      {
+        "persona": "strong",
+        "provider": "ollama",
+        "score": 80.0,
+        "status": "completed",
+        "questions": 25,
+        "minutes_used": 13.3,
+        "dimensions": {
+          "technical": 4.0,
+          "projects": 4.0,
+          "problem_solving": 3.5,
+          "communication": 5.0,
+          "behavioural": 3.5
+        },
+        "flags": [],
+        "redirects": 0,
+        "follow_ups": 11,
+        "hints": 1,
+        "scorer": "ollama",
+        "scorer_runs": 3,
+        "wall_seconds": 0.2,
+        "has_transcript": true,
+        "weak_areas": [
+          "Practise problem solving: explain with one concrete example each time."
+        ]
+      },
+      {
+        "persona": "average",
+        "provider": "ollama",
+        "score": 50.5,
+        "status": "completed",
+        "questions": 21,
+        "minutes_used": 9.1,
+        "dimensions": {
+          "technical": 3.0,
+          "projects": 1.0,
+          "problem_solving": 3.0,
+          "communication": 3.5,
+          "behavioural": 2.5
+        },
+        "flags": [],
+        "redirects": 0,
+        "follow_ups": 3,
+        "hints": 2,
+        "scorer": "ollama",
+        "scorer_runs": 3,
+        "wall_seconds": 0.3,
+        "has_transcript": true,
+        "weak_areas": [
+          "Practise projects: explain with one concrete example each time."
+        ]
+      },
+      {
+        "persona": "weak",
+        "provider": "ollama",
+        "score": 34.0,
+        "status": "completed",
+        "questions": 21,
+        "minutes_used": 7.2,
+        "dimensions": {
+          "technical": 2.0,
+          "projects": 1.5,
+          "problem_solving": 1.0,
+          "communication": 2.5,
+          "behavioural": 1.5
+        },
+        "flags": [],
+        "redirects": 0,
+        "follow_ups": 1,
+        "hints": 4,
+        "scorer": "ollama",
+        "scorer_runs": 3,
+        "wall_seconds": 0.2,
+        "has_transcript": true,
+        "weak_areas": [
+          "Practise problem solving: explain with one concrete example each time."
+        ]
+      },
+      {
+        "persona": "rambler",
+        "provider": "ollama",
+        "score": 51.0,
+        "status": "completed",
+        "questions": 21,
+        "minutes_used": 14.3,
+        "dimensions": {
+          "technical": 3.0,
+          "projects": 2.0,
+          "problem_solving": 2.5,
+          "communication": 3.0,
+          "behavioural": 2.0
+        },
+        "flags": [],
+        "redirects": 7,
+        "follow_ups": 6,
+        "hints": 0,
+        "scorer": "ollama",
+        "scorer_runs": 3,
+        "wall_seconds": 0.3,
+        "has_transcript": true,
+        "weak_areas": [
+          "Practise projects: explain with one concrete example each time."
+        ]
+      },
+      {
+        "persona": "injector",
+        "provider": "ollama",
+        "score": 41.5,
+        "status": "completed",
+        "questions": 27,
+        "minutes_used": 10.5,
+        "dimensions": {
+          "technical": 2.5,
+          "projects": 1.5,
+          "problem_solving": 1.5,
+          "communication": 3.0,
+          "behavioural": 2.0
+        },
+        "flags": [
+          "injection_attempt"
+        ],
+        "redirects": 1,
+        "follow_ups": 5,
+        "hints": 5,
+        "scorer": "ollama",
+        "scorer_runs": 3,
+        "wall_seconds": 0.3,
+        "has_transcript": true,
+        "weak_areas": [
+          "Practise projects: explain with one concrete example each time."
+        ]
+      }
+    ],
+    "ordering_ok": true
+  },
+  "jobs": {
+    "k": 10,
+    "profiles": 6,
+    "good_match_threshold": 50,
+    "mean_precision_at_5": 0.867,
+    "mean_good_match_precision": 0.958,
+    "mean_recall": 0.793,
+    "pct_relevant_all_results": 0.641,
+    "rows": [
+      {
+        "role": "Full Stack Developer",
+        "query": "(React OR \"Node.js\" OR JavaScript OR \"Express.js\") AND (intern OR internship) AND (Bangalore OR Bengaluru OR remote OR \"work from home\" OR WFH)",
+        "results": 5,
+        "good_matches": 5,
+        "judged": [
+          {
+            "title": "Full Stack Developer Intern (MERN)",
+            "company": "KiranaKart",
+            "match": 89,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Full Stack Developer Intern (MERN)",
+            "company": "Nimbus Analytics",
+            "match": 83,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Backend Developer Intern",
+            "company": "EduSpark",
+            "match": 64,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Backend Developer Intern",
+            "company": "Krishi AI",
+            "match": 61,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Frontend Developer Intern",
+            "company": "Lumen Data",
+            "match": 53,
+            "relevant": true,
+            "has_reasons": true
+          }
+        ],
+        "precision_at_5": 1.0,
+        "good_match_precision": 1.0,
+        "recall": 0.83,
+        "relevant_in_index": 6,
+        "all_have_reasons": true,
+        "deep_links": 6
+      },
+      {
+        "role": "Backend Developer",
+        "query": "(\"REST APIs\" OR \"Spring Boot\" OR SQL OR Docker) AND (intern OR internship) AND (Bangalore OR Bengaluru OR remote OR \"work from home\" OR WFH)",
+        "results": 13,
+        "good_matches": 3,
+        "judged": [
+          {
+            "title": "Software Engineering Intern",
+            "company": "Fintrix Labs",
+            "match": 66,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Backend Developer Intern",
+            "company": "EduSpark",
+            "match": 65,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Backend Developer Intern",
+            "company": "Krishi AI",
+            "match": 62,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "QA Automation Intern",
+            "company": "Krishi AI",
+            "match": 45,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "QA Automation Intern",
+            "company": "KiranaKart",
+            "match": 40,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "Flutter Developer Intern",
+            "company": "Nimbus Analytics",
+            "match": 36,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "Flutter Developer Intern",
+            "company": "EduSpark",
+            "match": 36,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "Android Developer Intern",
+            "company": "KiranaKart",
+            "match": 33,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "Machine Learning Intern",
+            "company": "SwiftShip",
+            "match": 32,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "Data Science Intern",
+            "company": "EduSpark",
+            "match": 31,
+            "relevant": false,
+            "has_reasons": true
+          }
+        ],
+        "precision_at_5": 0.6,
+        "good_match_precision": 1.0,
+        "recall": 0.6,
+        "relevant_in_index": 5,
+        "all_have_reasons": true,
+        "deep_links": 6
+      },
+      {
+        "role": "Frontend Developer",
+        "query": "(React OR CSS OR HTML OR \"Tailwind CSS\") AND (intern OR internship) AND (Bangalore OR Bengaluru OR remote OR \"work from home\" OR WFH)",
+        "results": 3,
+        "good_matches": 2,
+        "judged": [
+          {
+            "title": "Frontend Developer Intern",
+            "company": "Lumen Data",
+            "match": 72,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Full Stack Developer Intern (MERN)",
+            "company": "KiranaKart",
+            "match": 53,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Full Stack Developer Intern (MERN)",
+            "company": "Nimbus Analytics",
+            "match": 47,
+            "relevant": true,
+            "has_reasons": true
+          }
+        ],
+        "precision_at_5": 1.0,
+        "good_match_precision": 1.0,
+        "recall": 0.5,
+        "relevant_in_index": 4,
+        "all_have_reasons": true,
+        "deep_links": 6
+      },
+      {
+        "role": "Data Scientist",
+        "query": "(Pandas OR Python OR \"scikit-learn\" OR PyTorch) AND (intern OR internship) AND (Bangalore OR Bengaluru OR remote OR \"work from home\" OR WFH)",
+        "results": 6,
+        "good_matches": 5,
+        "judged": [
+          {
+            "title": "Data Science Intern",
+            "company": "EduSpark",
+            "match": 75,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Data Science Intern",
+            "company": "Nimbus Analytics",
+            "match": 75,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Machine Learning Intern",
+            "company": "SwiftShip",
+            "match": 70,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Machine Learning Intern",
+            "company": "Nimbus Analytics",
+            "match": 67,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Data Analyst Intern",
+            "company": "KiranaKart",
+            "match": 54,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "GenAI Engineering Intern",
+            "company": "Orbit Logistics",
+            "match": 31,
+            "relevant": true,
+            "has_reasons": true
+          }
+        ],
+        "precision_at_5": 1.0,
+        "good_match_precision": 1.0,
+        "recall": 0.83,
+        "relevant_in_index": 6,
+        "all_have_reasons": true,
+        "deep_links": 6
+      },
+      {
+        "role": "Data Analyst",
+        "query": "(Excel OR SQL OR \"Power BI\" OR Python) AND (intern OR internship) AND (Bangalore OR Bengaluru OR remote OR \"work from home\" OR WFH)",
+        "results": 9,
+        "good_matches": 5,
+        "judged": [
+          {
+            "title": "Data Analyst Intern",
+            "company": "KiranaKart",
+            "match": 76,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Data Science Intern",
+            "company": "EduSpark",
+            "match": 62,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Data Science Intern",
+            "company": "Nimbus Analytics",
+            "match": 62,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Machine Learning Intern",
+            "company": "SwiftShip",
+            "match": 54,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Machine Learning Intern",
+            "company": "Nimbus Analytics",
+            "match": 51,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "QA Automation Intern",
+            "company": "Krishi AI",
+            "match": 36,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "QA Automation Intern",
+            "company": "KiranaKart",
+            "match": 34,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "GenAI Engineering Intern",
+            "company": "Orbit Logistics",
+            "match": 31,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "Software Engineering Intern",
+            "company": "Fintrix Labs",
+            "match": 31,
+            "relevant": false,
+            "has_reasons": true
+          }
+        ],
+        "precision_at_5": 1.0,
+        "good_match_precision": 1.0,
+        "recall": 1.0,
+        "relevant_in_index": 5,
+        "all_have_reasons": true,
+        "deep_links": 6
+      },
+      {
+        "role": "Android Developer",
+        "query": "(Android OR Kotlin OR Java OR Firebase) AND (intern OR internship) AND (Bangalore OR Bengaluru OR remote OR \"work from home\" OR WFH)",
+        "results": 6,
+        "good_matches": 4,
+        "judged": [
+          {
+            "title": "Android Developer Intern",
+            "company": "KiranaKart",
+            "match": 76,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Flutter Developer Intern",
+            "company": "Nimbus Analytics",
+            "match": 64,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Flutter Developer Intern",
+            "company": "EduSpark",
+            "match": 64,
+            "relevant": true,
+            "has_reasons": true
+          },
+          {
+            "title": "Software Engineering Intern",
+            "company": "Fintrix Labs",
+            "match": 50,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "QA Automation Intern",
+            "company": "Krishi AI",
+            "match": 36,
+            "relevant": false,
+            "has_reasons": true
+          },
+          {
+            "title": "QA Automation Intern",
+            "company": "KiranaKart",
+            "match": 34,
+            "relevant": false,
+            "has_reasons": true
+          }
+        ],
+        "precision_at_5": 0.6,
+        "good_match_precision": 0.75,
+        "recall": 1.0,
+        "relevant_in_index": 3,
+        "all_have_reasons": true,
+        "deep_links": 6
+      }
+    ]
+  },
+  "dedupe": {
+    "inserted": 3,
+    "stored": 2,
+    "rows": [
+      {
+        "title": "Backend Developer Intern",
+        "source": "greenhouse",
+        "also_on": [
+          {
+            "source": "lever",
+            "url": "https://jobs.example.com/acme/abc"
+          }
+        ]
+      },
+      {
+        "title": "Frontend Developer Intern",
+        "source": "remotive",
+        "also_on": []
+      }
+    ]
+  }
+}

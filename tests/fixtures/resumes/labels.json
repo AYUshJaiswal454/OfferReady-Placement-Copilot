@@ -1,0 +1,194 @@
+[
+  {
+    "file": "resume_01.pdf",
+    "defects": [],
+    "expected_failures": []
+  },
+  {
+    "file": "resume_02.pdf",
+    "defects": [
+      "two_pages"
+    ],
+    "expected_failures": [
+      "R1"
+    ]
+  },
+  {
+    "file": "resume_03.pdf",
+    "defects": [
+      "mixed_fonts"
+    ],
+    "expected_failures": [
+      "R2.1"
+    ]
+  },
+  {
+    "file": "resume_04.pdf",
+    "defects": [
+      "misaligned_bullets"
+    ],
+    "expected_failures": [
+      "R2.2"
+    ]
+  },
+  {
+    "file": "resume_05.pdf",
+    "defects": [
+      "mixed_dates"
+    ],
+    "expected_failures": [
+      "R2.3"
+    ]
+  },
+  {
+    "file": "resume_06.pdf",
+    "defects": [
+      "typos"
+    ],
+    "expected_failures": [
+      "R3.1"
+    ]
+  },
+  {
+    "file": "resume_07.pdf",
+    "defects": [
+      "weak_bullets"
+    ],
+    "expected_failures": [
+      "R4",
+      "R7.1",
+      "R7.2"
+    ]
+  },
+  {
+    "file": "resume_08.pdf",
+    "defects": [
+      "no_metrics"
+    ],
+    "expected_failures": [
+      "R4",
+      "R7.2"
+    ]
+  },
+  {
+    "file": "resume_09.pdf",
+    "defects": [
+      "project_links_missing"
+    ],
+    "expected_failures": [
+      "R4"
+    ]
+  },
+  {
+    "file": "resume_10.pdf",
+    "defects": [
+      "no_github_link",
+      "no_leetcode_link"
+    ],
+    "expected_failures": [
+      "R5"
+    ]
+  },
+  {
+    "file": "resume_11.pdf",
+    "defects": [
+      "no_cocurricular"
+    ],
+    "expected_failures": [
+      "R6"
+    ]
+  },
+  {
+    "file": "resume_12.pdf",
+    "defects": [
+      "skills_as_image"
+    ],
+    "expected_failures": [
+      "R8.2"
+    ]
+  },
+  {
+    "file": "resume_13.pdf",
+    "defects": [
+      "two_column"
+    ],
+    "expected_failures": [
+      "R8.4"
+    ]
+  },
+  {
+    "file": "resume_14.pdf",
+    "defects": [
+      "nonstandard_headings"
+    ],
+    "expected_failures": [
+      "R8.3"
+    ]
+  },
+  {
+    "file": "resume_15.pdf",
+    "defects": [
+      "inconsistent_spacing",
+      "tiny_margins"
+    ],
+    "expected_failures": [
+      "R2.4"
+    ]
+  },
+  {
+    "file": "resume_16.pdf",
+    "defects": [
+      "tech_casing"
+    ],
+    "expected_failures": [
+      "R3.2"
+    ]
+  },
+  {
+    "file": "resume_17.pdf",
+    "defects": [
+      "plain_links"
+    ],
+    "expected_failures": [
+      "R4",
+      "R5"
+    ]
+  },
+  {
+    "file": "resume_18.pdf",
+    "defects": [
+      "icon_font",
+      "table"
+    ],
+    "expected_failures": [
+      "R8.4"
+    ]
+  },
+  {
+    "file": "resume_19.pdf",
+    "defects": [
+      "two_pages",
+      "typos",
+      "weak_bullets"
+    ],
+    "expected_failures": [
+      "R1",
+      "R3.1",
+      "R4",
+      "R7.1",
+      "R7.2"
+    ]
+  },
+  {
+    "file": "resume_20.pdf",
+    "defects": [
+      "mixed_dates",
+      "no_cocurricular",
+      "photo"
+    ],
+    "expected_failures": [
+      "R2.3",
+      "R6"
+    ]
+  }
+]

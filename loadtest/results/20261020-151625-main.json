@@ -1,0 +1,504 @@
+{
+  "base": "http://127.0.0.1:8001",
+  "stages": [
+    {
+      "users": 50,
+      "duration_s": 120,
+      "wall_s": 123.5,
+      "requests": 2548,
+      "errors": 0,
+      "error_rate": 0.0,
+      "throughput_rps": 20.6,
+      "worst_interactive_p95_ms": 818,
+      "resume_reviews_completed": 50,
+      "resume_reviews_unfinished": 0,
+      "review_p50_s": 3.0,
+      "review_p95_s": 3.9,
+      "endpoints": {
+        "chat_stream": {
+          "requests": 166,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 6,
+          "p95_ms": 18,
+          "p99_ms": 128,
+          "max_ms": 130,
+          "sample_errors": []
+        },
+        "consent": {
+          "requests": 50,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 48,
+          "p95_ms": 66,
+          "p99_ms": 120,
+          "max_ms": 120,
+          "sample_errors": []
+        },
+        "interview_start": {
+          "requests": 50,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 6,
+          "p95_ms": 27,
+          "p99_ms": 52,
+          "max_ms": 52,
+          "sample_errors": []
+        },
+        "interview_turn": {
+          "requests": 275,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 809,
+          "p95_ms": 818,
+          "p99_ms": 826,
+          "max_ms": 831,
+          "sample_errors": []
+        },
+        "jobs_search": {
+          "requests": 360,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 23,
+          "p95_ms": 52,
+          "p99_ms": 183,
+          "max_ms": 1105,
+          "sample_errors": []
+        },
+        "notifications": {
+          "requests": 238,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 4,
+          "p95_ms": 15,
+          "p99_ms": 44,
+          "max_ms": 92,
+          "sample_errors": []
+        },
+        "profile": {
+          "requests": 54,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 9,
+          "p95_ms": 170,
+          "p99_ms": 258,
+          "max_ms": 258,
+          "sample_errors": []
+        },
+        "readiness": {
+          "requests": 468,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 4,
+          "p95_ms": 12,
+          "p99_ms": 79,
+          "max_ms": 273,
+          "sample_errors": []
+        },
+        "report": {
+          "requests": 307,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 6,
+          "p95_ms": 18,
+          "p99_ms": 80,
+          "max_ms": 177,
+          "sample_errors": []
+        },
+        "signup": {
+          "requests": 50,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 78,
+          "p95_ms": 161,
+          "p99_ms": 182,
+          "max_ms": 182,
+          "sample_errors": []
+        },
+        "tracker_add": {
+          "requests": 50,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 4,
+          "p95_ms": 13,
+          "p99_ms": 30,
+          "max_ms": 30,
+          "sample_errors": []
+        },
+        "tracker_board": {
+          "requests": 215,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 45,
+          "p95_ms": 50,
+          "p99_ms": 60,
+          "max_ms": 116,
+          "sample_errors": []
+        },
+        "tracker_update": {
+          "requests": 165,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 4,
+          "p95_ms": 8,
+          "p99_ms": 13,
+          "max_ms": 17,
+          "sample_errors": []
+        },
+        "update_profile": {
+          "requests": 50,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 48,
+          "p95_ms": 132,
+          "p99_ms": 152,
+          "max_ms": 152,
+          "sample_errors": []
+        },
+        "upload_resume": {
+          "requests": 50,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 52,
+          "p95_ms": 172,
+          "p99_ms": 193,
+          "max_ms": 193,
+          "sample_errors": []
+        }
+      }
+    },
+    {
+      "users": 100,
+      "duration_s": 120,
+      "wall_s": 123.8,
+      "requests": 5152,
+      "errors": 0,
+      "error_rate": 0.0,
+      "throughput_rps": 41.6,
+      "worst_interactive_p95_ms": 826,
+      "resume_reviews_completed": 100,
+      "resume_reviews_unfinished": 0,
+      "review_p50_s": 5.2,
+      "review_p95_s": 7.3,
+      "endpoints": {
+        "chat_stream": {
+          "requests": 310,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 7,
+          "p95_ms": 25,
+          "p99_ms": 141,
+          "max_ms": 235,
+          "sample_errors": []
+        },
+        "consent": {
+          "requests": 100,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 83,
+          "p95_ms": 363,
+          "p99_ms": 545,
+          "max_ms": 545,
+          "sample_errors": []
+        },
+        "interview_start": {
+          "requests": 100,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 9,
+          "p95_ms": 188,
+          "p99_ms": 381,
+          "max_ms": 381,
+          "sample_errors": []
+        },
+        "interview_turn": {
+          "requests": 494,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 810,
+          "p95_ms": 826,
+          "p99_ms": 841,
+          "max_ms": 937,
+          "sample_errors": []
+        },
+        "jobs_search": {
+          "requests": 702,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 27,
+          "p95_ms": 157,
+          "p99_ms": 267,
+          "max_ms": 424,
+          "sample_errors": []
+        },
+        "notifications": {
+          "requests": 480,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 4,
+          "p95_ms": 46,
+          "p99_ms": 206,
+          "max_ms": 401,
+          "sample_errors": []
+        },
+        "profile": {
+          "requests": 191,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 38,
+          "p95_ms": 407,
+          "p99_ms": 677,
+          "max_ms": 686,
+          "sample_errors": []
+        },
+        "readiness": {
+          "requests": 900,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 5,
+          "p95_ms": 38,
+          "p99_ms": 191,
+          "max_ms": 546,
+          "sample_errors": []
+        },
+        "report": {
+          "requests": 563,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 6,
+          "p95_ms": 60,
+          "p99_ms": 265,
+          "max_ms": 421,
+          "sample_errors": []
+        },
+        "signup": {
+          "requests": 100,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 222,
+          "p95_ms": 445,
+          "p99_ms": 664,
+          "max_ms": 664,
+          "sample_errors": []
+        },
+        "tracker_add": {
+          "requests": 100,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 8,
+          "p95_ms": 235,
+          "p99_ms": 425,
+          "max_ms": 425,
+          "sample_errors": []
+        },
+        "tracker_board": {
+          "requests": 506,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 46,
+          "p95_ms": 64,
+          "p99_ms": 197,
+          "max_ms": 536,
+          "sample_errors": []
+        },
+        "tracker_update": {
+          "requests": 406,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 5,
+          "p95_ms": 16,
+          "p99_ms": 113,
+          "max_ms": 209,
+          "sample_errors": []
+        },
+        "update_profile": {
+          "requests": 100,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 102,
+          "p95_ms": 236,
+          "p99_ms": 696,
+          "max_ms": 696,
+          "sample_errors": []
+        },
+        "upload_resume": {
+          "requests": 100,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 152,
+          "p95_ms": 395,
+          "p99_ms": 545,
+          "max_ms": 545,
+          "sample_errors": []
+        }
+      }
+    },
+    {
+      "users": 150,
+      "duration_s": 120,
+      "wall_s": 124.6,
+      "requests": 7388,
+      "errors": 0,
+      "error_rate": 0.0,
+      "throughput_rps": 59.3,
+      "worst_interactive_p95_ms": 882,
+      "resume_reviews_completed": 150,
+      "resume_reviews_unfinished": 0,
+      "review_p50_s": 10.6,
+      "review_p95_s": 15.2,
+      "endpoints": {
+        "chat_stream": {
+          "requests": 441,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 8,
+          "p95_ms": 239,
+          "p99_ms": 406,
+          "max_ms": 511,
+          "sample_errors": []
+        },
+        "consent": {
+          "requests": 150,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 217,
+          "p95_ms": 396,
+          "p99_ms": 438,
+          "max_ms": 547,
+          "sample_errors": []
+        },
+        "interview_start": {
+          "requests": 150,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 16,
+          "p95_ms": 360,
+          "p99_ms": 645,
+          "max_ms": 732,
+          "sample_errors": []
+        },
+        "interview_turn": {
+          "requests": 664,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 811,
+          "p95_ms": 882,
+          "p99_ms": 1149,
+          "max_ms": 1606,
+          "sample_errors": []
+        },
+        "jobs_search": {
+          "requests": 991,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 31,
+          "p95_ms": 198,
+          "p99_ms": 385,
+          "max_ms": 684,
+          "sample_errors": []
+        },
+        "notifications": {
+          "requests": 637,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 5,
+          "p95_ms": 122,
+          "p99_ms": 245,
+          "max_ms": 483,
+          "sample_errors": []
+        },
+        "profile": {
+          "requests": 547,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 137,
+          "p95_ms": 360,
+          "p99_ms": 482,
+          "max_ms": 768,
+          "sample_errors": []
+        },
+        "readiness": {
+          "requests": 1202,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 6,
+          "p95_ms": 167,
+          "p99_ms": 241,
+          "max_ms": 626,
+          "sample_errors": []
+        },
+        "report": {
+          "requests": 782,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 7,
+          "p95_ms": 155,
+          "p99_ms": 343,
+          "max_ms": 436,
+          "sample_errors": []
+        },
+        "signup": {
+          "requests": 150,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 559,
+          "p95_ms": 847,
+          "p99_ms": 1097,
+          "max_ms": 1318,
+          "sample_errors": []
+        },
+        "tracker_add": {
+          "requests": 149,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 11,
+          "p95_ms": 375,
+          "p99_ms": 385,
+          "max_ms": 484,
+          "sample_errors": []
+        },
+        "tracker_board": {
+          "requests": 687,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 47,
+          "p95_ms": 167,
+          "p99_ms": 236,
+          "max_ms": 398,
+          "sample_errors": []
+        },
+        "tracker_update": {
+          "requests": 538,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 5,
+          "p95_ms": 38,
+          "p99_ms": 217,
+          "max_ms": 390,
+          "sample_errors": []
+        },
+        "update_profile": {
+          "requests": 150,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 220,
+          "p95_ms": 381,
+          "p99_ms": 410,
+          "max_ms": 653,
+          "sample_errors": []
+        },
+        "upload_resume": {
+          "requests": 150,
+          "errors": 0,
+          "rate_limited": 0,
+          "p50_ms": 340,
+          "p95_ms": 612,
+          "p99_ms": 680,
+          "max_ms": 771,
+          "sample_errors": []
+        }
+      }
+    }
+  ],
+  "python": "3.13.16"
+}

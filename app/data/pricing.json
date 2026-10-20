@@ -1,0 +1,17 @@
+{
+  "_source": "OpenAI API pricing page (developers.openai.com/api/docs/pricing) and OpenRouter listing, checked 2026-10-18. USD per 1M tokens; audio per minute. Update when prices change.",
+  "models": {
+    "gpt-6-luna": {"input": 0.10, "cached_input": 0.01, "output": 0.50},
+    "gpt-6.1-sol": {"input": 2.00, "cached_input": 0.10, "output": 10.00},
+    "gpt-6-astra": {"input": 10.00, "cached_input": 1.00, "output": 50.00},
+    "gpt-5-mini": {"input": 0.25, "cached_input": 0.025, "output": 2.00},
+    "gpt-4.1-mini": {"input": 0.40, "cached_input": 0.10, "output": 1.60},
+    "gpt-4o-mini": {"input": 0.15, "cached_input": 0.075, "output": 0.60}
+  },
+  "audio_per_minute": {
+    "gpt-4o-mini-transcribe": 0.003,
+    "gpt-4o-transcribe": 0.006,
+    "gpt-4o-mini-tts": 0.015
+  },
+  "usd_to_inr": 84.0
+}

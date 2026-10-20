@@ -1,0 +1,4 @@
+# Tests, fixtures, load test and asset scripts (the suite itself uses only the standard library's unittest)
+-r requirements.txt
+reportlab>=4.0        # builds the labelled resume corpus
+fonttools>=4.50       # scripts/subset_fonts.py

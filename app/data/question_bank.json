@@ -1,0 +1,1149 @@
+{
+ "version": "2026.10",
+ "technical": [
+  {
+   "id": "DAT001",
+   "topic": "Data Structures",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security",
+    "data_science",
+    "genai"
+   ],
+   "question": "What is the difference between an array and a linked list, and when would you choose each?",
+   "key_points": [
+    "contiguous memory",
+    "O(1) random access",
+    "O(n) insert/delete in array middle",
+    "linked list O(1) insert at known node",
+    "no random access",
+    "cache locality"
+   ],
+   "follow_up": "How would you detect a cycle in a linked list?",
+   "hint": "Think about how elements are stored in memory and what that means for access by index.",
+   "difficulty": "easy"
+  },
+  {
+   "id": "DAT002",
+   "topic": "Data Structures",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security",
+    "data_science"
+   ],
+   "question": "How does a hash map work internally, and what happens on a collision?",
+   "key_points": [
+    "hash function",
+    "buckets",
+    "collision",
+    "chaining",
+    "open addressing",
+    "load factor",
+    "resize/rehash",
+    "average O(1)"
+   ],
+   "follow_up": "What is the worst-case lookup time and when does it happen?",
+   "hint": "Start from how a key is turned into an array index.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "DAT003",
+   "topic": "Data Structures",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security"
+   ],
+   "question": "What is a binary search tree, and why can its operations become slow?",
+   "key_points": [
+    "left smaller right larger",
+    "O(log n) when balanced",
+    "skewed tree O(n)",
+    "sorted insertion",
+    "balanced trees",
+    "AVL",
+    "red-black"
+   ],
+   "follow_up": "How would you check whether a given binary tree is a valid BST?",
+   "hint": "What happens if you insert already-sorted numbers?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "ALG004",
+   "topic": "Algorithms",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security",
+    "data_science"
+   ],
+   "question": "Explain time complexity with an example. What is the complexity of binary search and why?",
+   "key_points": [
+    "big-o",
+    "growth with input size",
+    "halves the search space",
+    "O(log n)",
+    "sorted input",
+    "worst case"
+   ],
+   "follow_up": "When would a linear scan beat binary search in practice?",
+   "hint": "Each step of binary search throws away part of the input — how much?",
+   "difficulty": "easy"
+  },
+  {
+   "id": "ALG005",
+   "topic": "Algorithms",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security"
+   ],
+   "question": "How would you find the two numbers in an array that add up to a target?",
+   "key_points": [
+    "brute force O(n^2)",
+    "hash set/map",
+    "O(n) time",
+    "O(n) space",
+    "sort + two pointers",
+    "O(n log n)"
+   ],
+   "follow_up": "What changes if the array is already sorted?",
+   "hint": "Can you remember numbers you have already seen?",
+   "difficulty": "easy"
+  },
+  {
+   "id": "ALG006",
+   "topic": "Algorithms",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security"
+   ],
+   "question": "What is dynamic programming? Explain it with an example problem.",
+   "key_points": [
+    "overlapping subproblems",
+    "optimal substructure",
+    "memoization",
+    "tabulation",
+    "fibonacci",
+    "knapsack",
+    "avoid recomputation"
+   ],
+   "follow_up": "How would you reduce the space used by your DP solution?",
+   "hint": "Think about a recursive solution that computes the same thing many times.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "ALG007",
+   "topic": "Algorithms",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security"
+   ],
+   "question": "BFS or DFS: how do they differ and when would you use each?",
+   "key_points": [
+    "queue",
+    "stack/recursion",
+    "level order",
+    "shortest path in unweighted graph",
+    "explores depth first",
+    "visited set",
+    "O(V+E)"
+   ],
+   "follow_up": "How would you find the shortest path in a weighted graph?",
+   "hint": "Which data structure does each one use to decide the next node?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "OOP008",
+   "topic": "OOP",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security"
+   ],
+   "question": "Explain the four pillars of object-oriented programming with a real example.",
+   "key_points": [
+    "encapsulation",
+    "abstraction",
+    "inheritance",
+    "polymorphism",
+    "overriding",
+    "overloading",
+    "interfaces"
+   ],
+   "follow_up": "What is the difference between an abstract class and an interface?",
+   "hint": "Think of a class like BankAccount or Vehicle.",
+   "difficulty": "easy"
+  },
+  {
+   "id": "OOP009",
+   "topic": "OOP",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security"
+   ],
+   "question": "What is the difference between composition and inheritance? Which would you prefer?",
+   "key_points": [
+    "is-a vs has-a",
+    "tight coupling",
+    "flexibility",
+    "favor composition",
+    "reuse",
+    "fragile base class"
+   ],
+   "follow_up": "Give an example where inheritance caused problems.",
+   "hint": "Compare 'a Car is a Vehicle' with 'a Car has an Engine'.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "DBM010",
+   "topic": "DBMS",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security",
+    "data_analyst",
+    "data_science"
+   ],
+   "question": "What is database normalization, and why do we normalize?",
+   "key_points": [
+    "reduce redundancy",
+    "update anomalies",
+    "1NF",
+    "2NF",
+    "3NF",
+    "functional dependency",
+    "denormalize for reads"
+   ],
+   "follow_up": "When would you deliberately denormalize?",
+   "hint": "Think of storing the same customer address in many order rows.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "DBM011",
+   "topic": "DBMS",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security",
+    "data_analyst"
+   ],
+   "question": "What is an index in a database? How does it speed up queries and what does it cost?",
+   "key_points": [
+    "b-tree",
+    "faster lookups",
+    "avoid full table scan",
+    "slower writes",
+    "extra storage",
+    "composite index",
+    "selectivity"
+   ],
+   "follow_up": "Why might the database ignore an index you created?",
+   "hint": "Think of the index at the back of a book.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "DBM012",
+   "topic": "DBMS",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security"
+   ],
+   "question": "Explain ACID properties with an example of a bank transfer.",
+   "key_points": [
+    "atomicity",
+    "consistency",
+    "isolation",
+    "durability",
+    "rollback",
+    "commit",
+    "concurrent transactions"
+   ],
+   "follow_up": "What problems happen at a low isolation level?",
+   "hint": "What should happen if the money leaves one account but the system crashes?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "SQL013",
+   "topic": "SQL",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security",
+    "data_analyst",
+    "data_science"
+   ],
+   "question": "What is the difference between INNER JOIN and LEFT JOIN? Give an example.",
+   "key_points": [
+    "matching rows only",
+    "all rows from left table",
+    "null for missing",
+    "customers without orders"
+   ],
+   "follow_up": "How would you find customers who never placed an order?",
+   "hint": "Think of customers and orders tables.",
+   "difficulty": "easy"
+  },
+  {
+   "id": "SQL014",
+   "topic": "SQL",
+   "roles": [
+    "data_analyst",
+    "data_science",
+    "backend",
+    "sde"
+   ],
+   "question": "How would you find the second highest salary in an employees table?",
+   "key_points": [
+    "order by desc",
+    "limit offset",
+    "max with subquery",
+    "dense_rank",
+    "window function",
+    "distinct for ties"
+   ],
+   "follow_up": "How do you handle employees with the same salary?",
+   "hint": "What is the highest salary that is lower than the maximum?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "OPE015",
+   "topic": "Operating Systems",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security"
+   ],
+   "question": "What is the difference between a process and a thread?",
+   "key_points": [
+    "own memory space",
+    "threads share memory",
+    "context switch cost",
+    "lighter weight",
+    "communication",
+    "isolation"
+   ],
+   "follow_up": "What problems appear when threads share data, and how do you prevent them?",
+   "hint": "Think about what each one shares with the others.",
+   "difficulty": "easy"
+  },
+  {
+   "id": "OPE016",
+   "topic": "Operating Systems",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security"
+   ],
+   "question": "What is a deadlock, and what conditions cause it?",
+   "key_points": [
+    "mutual exclusion",
+    "hold and wait",
+    "no preemption",
+    "circular wait",
+    "lock ordering",
+    "prevention",
+    "detection"
+   ],
+   "follow_up": "How would you prevent deadlock in code that takes two locks?",
+   "hint": "Picture two people each holding one key the other needs.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "OPE017",
+   "topic": "Operating Systems",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security"
+   ],
+   "question": "What is virtual memory, and why is it useful?",
+   "key_points": [
+    "paging",
+    "page table",
+    "illusion of large memory",
+    "isolation between processes",
+    "page fault",
+    "swap",
+    "tlb"
+   ],
+   "follow_up": "What is thrashing?",
+   "hint": "What does a program see when it uses memory addresses?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "COM018",
+   "topic": "Computer Networks",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security",
+    "devops",
+    "security"
+   ],
+   "question": "What is the difference between TCP and UDP? Give a use case for each.",
+   "key_points": [
+    "connection oriented",
+    "reliable delivery",
+    "ordering",
+    "congestion control",
+    "udp no handshake",
+    "lower latency",
+    "video/gaming/dns"
+   ],
+   "follow_up": "Why do video calls usually use UDP?",
+   "hint": "Which one guarantees the data arrives in order?",
+   "difficulty": "easy"
+  },
+  {
+   "id": "COM019",
+   "topic": "Computer Networks",
+   "roles": [
+    "sde",
+    "backend",
+    "fullstack",
+    "frontend",
+    "mobile",
+    "qa",
+    "devops",
+    "security",
+    "devops",
+    "security",
+    "fullstack",
+    "frontend",
+    "backend"
+   ],
+   "question": "What happens when you type a URL in the browser and press Enter?",
+   "key_points": [
+    "dns lookup",
+    "tcp connection",
+    "tls handshake",
+    "http request",
+    "server response",
+    "rendering",
+    "caching"
+   ],
+   "follow_up": "Where can caching happen along this path?",
+   "hint": "Start with how the browser finds the server's IP address.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "WEB020",
+   "topic": "Web",
+   "roles": [
+    "backend",
+    "fullstack",
+    "frontend",
+    "sde"
+   ],
+   "question": "What makes an API RESTful? Explain HTTP methods and status codes.",
+   "key_points": [
+    "resources",
+    "stateless",
+    "get post put patch delete",
+    "idempotent",
+    "status codes 2xx 4xx 5xx",
+    "json"
+   ],
+   "follow_up": "What is the difference between PUT and PATCH?",
+   "hint": "How would you design endpoints for a blog's posts?",
+   "difficulty": "easy"
+  },
+  {
+   "id": "WEB021",
+   "topic": "Web",
+   "roles": [
+    "backend",
+    "fullstack",
+    "sde",
+    "security"
+   ],
+   "question": "How would you implement authentication in a web app? Sessions vs JWT?",
+   "key_points": [
+    "password hashing",
+    "bcrypt",
+    "session cookie",
+    "jwt signed token",
+    "stateless",
+    "expiry",
+    "refresh token",
+    "httponly cookie"
+   ],
+   "follow_up": "How do you log a user out when using JWTs?",
+   "hint": "Where does the server keep track of who is logged in?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "JAV022",
+   "topic": "JavaScript",
+   "roles": [
+    "frontend",
+    "fullstack",
+    "sde"
+   ],
+   "question": "Explain the JavaScript event loop. How do setTimeout and Promises get executed?",
+   "key_points": [
+    "single threaded",
+    "call stack",
+    "task queue",
+    "microtask queue",
+    "promises before timers",
+    "non-blocking io"
+   ],
+   "follow_up": "What is printed first: a setTimeout(0) or a resolved Promise's then?",
+   "hint": "What runs while the code waits for a network response?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "JAV023",
+   "topic": "JavaScript",
+   "roles": [
+    "frontend",
+    "fullstack"
+   ],
+   "question": "What is a closure in JavaScript? Give a practical use.",
+   "key_points": [
+    "function remembers outer scope",
+    "lexical scope",
+    "private variables",
+    "callbacks",
+    "counter example",
+    "memory"
+   ],
+   "follow_up": "What classic bug happens with closures inside a for-loop with var?",
+   "hint": "Think of a function returned from another function.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "REA024",
+   "topic": "React",
+   "roles": [
+    "frontend",
+    "fullstack"
+   ],
+   "question": "How does React decide what to re-render? Explain state, props and the virtual DOM.",
+   "key_points": [
+    "virtual dom",
+    "diffing",
+    "reconciliation",
+    "state change triggers render",
+    "props from parent",
+    "keys in lists",
+    "memo"
+   ],
+   "follow_up": "How would you stop a child component from re-rendering unnecessarily?",
+   "hint": "What happens when you call setState?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "REA025",
+   "topic": "React",
+   "roles": [
+    "frontend",
+    "fullstack"
+   ],
+   "question": "Explain useEffect. When does it run and what is the dependency array for?",
+   "key_points": [
+    "after render",
+    "side effects",
+    "dependency array",
+    "cleanup function",
+    "empty array runs once",
+    "stale closures"
+   ],
+   "follow_up": "How would you avoid an infinite loop with useEffect and fetching data?",
+   "hint": "Think of fetching data when a component mounts.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "WEB026",
+   "topic": "Web",
+   "roles": [
+    "frontend",
+    "fullstack",
+    "uiux"
+   ],
+   "question": "How do you make a web page responsive?",
+   "key_points": [
+    "media queries",
+    "flexbox",
+    "grid",
+    "relative units",
+    "viewport meta",
+    "mobile first",
+    "images max-width"
+   ],
+   "follow_up": "How would you test responsiveness before deploying?",
+   "hint": "What changes between a 1366px laptop and a 390px phone?",
+   "difficulty": "easy"
+  },
+  {
+   "id": "NOD027",
+   "topic": "Node.js",
+   "roles": [
+    "backend",
+    "fullstack"
+   ],
+   "question": "How does Node.js handle many requests with a single thread?",
+   "key_points": [
+    "event loop",
+    "non-blocking io",
+    "libuv",
+    "thread pool",
+    "callbacks/promises",
+    "cpu-bound blocks",
+    "worker threads"
+   ],
+   "follow_up": "What happens if you run a heavy CPU computation in a request handler?",
+   "hint": "What does Node do while waiting for the database?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "BAC028",
+   "topic": "Backend",
+   "roles": [
+    "backend",
+    "fullstack",
+    "sde"
+   ],
+   "question": "What is caching, and how would you add caching to an API?",
+   "key_points": [
+    "store frequent results",
+    "redis",
+    "ttl",
+    "cache invalidation",
+    "cache-aside",
+    "stale data",
+    "hit ratio"
+   ],
+   "follow_up": "How do you keep the cache consistent when data changes?",
+   "hint": "What if 1,000 users ask for the same product page?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "SYS029",
+   "topic": "System Design",
+   "roles": [
+    "backend",
+    "fullstack",
+    "sde",
+    "devops"
+   ],
+   "question": "How would you design a URL shortener like bit.ly at a high level?",
+   "key_points": [
+    "generate short code",
+    "base62",
+    "database mapping",
+    "redirect 301/302",
+    "cache popular links",
+    "collisions",
+    "scale reads"
+   ],
+   "follow_up": "How would you handle 10x more traffic?",
+   "hint": "Start with the two main operations: create a short link and redirect.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "PYT030",
+   "topic": "Python",
+   "roles": [
+    "data_science",
+    "genai",
+    "backend",
+    "sde",
+    "data_analyst"
+   ],
+   "question": "What is the difference between a list and a tuple in Python, and what are decorators?",
+   "key_points": [
+    "list mutable",
+    "tuple immutable",
+    "hashable",
+    "faster",
+    "decorator wraps function",
+    "@syntax",
+    "logging/timing use"
+   ],
+   "follow_up": "Write (in words) a decorator that measures how long a function takes.",
+   "hint": "Which one can be used as a dictionary key?",
+   "difficulty": "easy"
+  },
+  {
+   "id": "JAV031",
+   "topic": "Java",
+   "roles": [
+    "backend",
+    "sde",
+    "mobile"
+   ],
+   "question": "How does HashMap work in Java, and why must you override equals and hashCode together?",
+   "key_points": [
+    "hashcode bucket",
+    "equals compare",
+    "collision",
+    "linked list/tree in bucket",
+    "contract",
+    "lookup fails if inconsistent"
+   ],
+   "follow_up": "What happened in Java 8 to improve HashMap's worst case?",
+   "hint": "What does HashMap use to choose the bucket?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "JAV032",
+   "topic": "Java",
+   "roles": [
+    "backend",
+    "sde"
+   ],
+   "question": "What is the difference between an ArrayList and a LinkedList, and between checked and unchecked exceptions?",
+   "key_points": [
+    "array backed",
+    "random access",
+    "node based",
+    "insert cost",
+    "checked compile time",
+    "unchecked runtime",
+    "throws"
+   ],
+   "follow_up": "When would you create a custom exception?",
+   "hint": "Think about which errors the compiler forces you to handle.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "MAC033",
+   "topic": "Machine Learning",
+   "roles": [
+    "data_science",
+    "genai"
+   ],
+   "question": "What is overfitting and how do you prevent it?",
+   "key_points": [
+    "fits noise",
+    "high variance",
+    "train vs validation gap",
+    "regularization",
+    "more data",
+    "cross-validation",
+    "dropout",
+    "early stopping"
+   ],
+   "follow_up": "How do you detect overfitting from your training curves?",
+   "hint": "Compare training accuracy with validation accuracy.",
+   "difficulty": "easy"
+  },
+  {
+   "id": "MAC034",
+   "topic": "Machine Learning",
+   "roles": [
+    "data_science",
+    "genai"
+   ],
+   "question": "Precision, recall and F1: what do they mean and when do you prefer each?",
+   "key_points": [
+    "true positives",
+    "false positives",
+    "false negatives",
+    "precision when fp costly",
+    "recall when fn costly",
+    "imbalanced data",
+    "f1 harmonic mean"
+   ],
+   "follow_up": "Which metric would you use for a cancer-screening model and why?",
+   "hint": "Think about spam filters vs disease detection.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "MAC035",
+   "topic": "Machine Learning",
+   "roles": [
+    "data_science",
+    "genai"
+   ],
+   "question": "Explain the bias-variance trade-off.",
+   "key_points": [
+    "underfitting high bias",
+    "overfitting high variance",
+    "model complexity",
+    "total error",
+    "sweet spot"
+   ],
+   "follow_up": "How does adding more training data affect bias and variance?",
+   "hint": "Compare a straight line with a very wiggly curve.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "GEN036",
+   "topic": "GenAI",
+   "roles": [
+    "genai",
+    "data_science"
+   ],
+   "question": "What is Retrieval-Augmented Generation (RAG), and why use it instead of fine-tuning?",
+   "key_points": [
+    "embeddings",
+    "vector database",
+    "retrieve relevant chunks",
+    "add to prompt",
+    "fresh/private data",
+    "cheaper than fine-tuning",
+    "reduces hallucination"
+   ],
+   "follow_up": "How would you evaluate whether your RAG system answers correctly?",
+   "hint": "How can an LLM answer questions about documents it was never trained on?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "DAT037",
+   "topic": "Data Analysis",
+   "roles": [
+    "data_analyst",
+    "data_science"
+   ],
+   "question": "How would you handle missing values in a dataset?",
+   "key_points": [
+    "drop rows/columns",
+    "impute mean/median/mode",
+    "forward fill",
+    "flag missingness",
+    "understand why missing",
+    "model-based imputation"
+   ],
+   "follow_up": "When is dropping rows a bad idea?",
+   "hint": "First ask why the values are missing.",
+   "difficulty": "easy"
+  },
+  {
+   "id": "DEV038",
+   "topic": "DevOps",
+   "roles": [
+    "devops",
+    "backend",
+    "fullstack"
+   ],
+   "question": "What is Docker and how is a container different from a virtual machine?",
+   "key_points": [
+    "image",
+    "container",
+    "shares host kernel",
+    "lightweight",
+    "vm has full os",
+    "isolation",
+    "dockerfile",
+    "portability"
+   ],
+   "follow_up": "How would you make a Docker image smaller?",
+   "hint": "What does each one virtualise?",
+   "difficulty": "easy"
+  },
+  {
+   "id": "DEV039",
+   "topic": "DevOps",
+   "roles": [
+    "devops",
+    "backend",
+    "fullstack",
+    "sde"
+   ],
+   "question": "What is CI/CD, and what would your pipeline do on every push?",
+   "key_points": [
+    "continuous integration",
+    "run tests automatically",
+    "build",
+    "lint",
+    "continuous deployment",
+    "github actions",
+    "rollback"
+   ],
+   "follow_up": "How would you deploy without downtime?",
+   "hint": "What should happen automatically before code reaches users?",
+   "difficulty": "medium"
+  },
+  {
+   "id": "AND040",
+   "topic": "Android",
+   "roles": [
+    "mobile"
+   ],
+   "question": "Explain the Android activity lifecycle.",
+   "key_points": [
+    "onCreate",
+    "onStart",
+    "onResume",
+    "onPause",
+    "onStop",
+    "onDestroy",
+    "configuration change",
+    "save state"
+   ],
+   "follow_up": "What happens to your activity when the phone is rotated?",
+   "hint": "Think of what happens when the user switches apps.",
+   "difficulty": "medium"
+  },
+  {
+   "id": "FLU041",
+   "topic": "Flutter",
+   "roles": [
+    "mobile"
+   ],
+   "question": "What is the difference between a StatelessWidget and a StatefulWidget in Flutter?",
+   "key_points": [
+    "immutable",
+    "setState",
+    "rebuild",
+    "state object",
+    "lifecycle",
+    "state management"
+   ],
+   "follow_up": "How would you share state across many screens?",
+   "hint": "Which one can change what it shows after it is built?",
+   "difficulty": "easy"
+  },
+  {
+   "id": "TES042",
+   "topic": "Testing",
+   "roles": [
+    "qa",
+    "sde",
+    "backend",
+    "frontend",
+    "fullstack"
+   ],
+   "question": "What is the difference between unit, integration and end-to-end tests?",
+   "key_points": [
+    "single function/class",
+    "mocks",
+    "components together",
+    "database/api",
+    "whole user flow",
+    "test pyramid",
+    "speed vs confidence"
+   ],
+   "follow_up": "What would you unit test in a login feature?",
+   "hint": "Think of testing a function vs testing the whole website.",
+   "difficulty": "easy"
+  },
+  {
+   "id": "SEC043",
+   "topic": "Security",
+   "roles": [
+    "security",
+    "backend",
+    "fullstack"
+   ],
+   "question": "What is SQL injection, and how do you prevent it?",
+   "key_points": [
+    "untrusted input in query",
+    "parameterized queries",
+    "prepared statements",
+    "orm",
+    "input validation",
+    "least privilege"
+   ],
+   "follow_up": "What is XSS and how is it different?",
+   "hint": "What if a user types SQL into a login form?",
+   "difficulty": "easy"
+  },
+  {
+   "id": "UI/044",
+   "topic": "UI/UX",
+   "roles": [
+    "uiux",
+    "frontend"
+   ],
+   "question": "How do you make a design accessible?",
+   "key_points": [
+    "contrast",
+    "alt text",
+    "keyboard navigation",
+    "semantic html",
+    "font size",
+    "focus states",
+    "screen readers"
+   ],
+   "follow_up": "How would you test accessibility?",
+   "hint": "Think of a user who cannot use a mouse.",
+   "difficulty": "medium"
+  }
+ ],
+ "hr": [
+  {
+   "id": "HR001",
+   "question": "Tell me about yourself — keep it to about a minute.",
+   "key_points": [
+    "education",
+    "focus area",
+    "key project",
+    "what you want next"
+   ],
+   "kind": "intro"
+  },
+  {
+   "id": "HR002",
+   "question": "Tell me about a time you faced a conflict or disagreement in a team. What did you do?",
+   "key_points": [
+    "situation",
+    "task",
+    "action",
+    "result",
+    "what you learned"
+   ],
+   "kind": "behavioral"
+  },
+  {
+   "id": "HR003",
+   "question": "Describe a time something you built failed or went wrong. How did you handle it?",
+   "key_points": [
+    "situation",
+    "ownership",
+    "fix",
+    "result",
+    "learning"
+   ],
+   "kind": "behavioral"
+  },
+  {
+   "id": "HR004",
+   "question": "Why are you interested in this role, and what makes you a good fit?",
+   "key_points": [
+    "role understanding",
+    "relevant skills",
+    "evidence",
+    "motivation"
+   ],
+   "kind": "motivation"
+  },
+  {
+   "id": "HR005",
+   "question": "What is one weakness you are actively working on?",
+   "key_points": [
+    "honest weakness",
+    "impact",
+    "concrete steps",
+    "progress"
+   ],
+   "kind": "self-awareness"
+  },
+  {
+   "id": "HR006",
+   "question": "Tell me about a time you learned a new technology quickly to finish something.",
+   "key_points": [
+    "situation",
+    "how you learned",
+    "what you built",
+    "result"
+   ],
+   "kind": "behavioral"
+  }
+ ],
+ "project": {
+  "opener": "Walk me through {project}: what problem does it solve, and how is it built?",
+  "follow_ups": [
+   "Why did you choose {tech} for {project}? What alternatives did you consider?",
+   "What was the hardest bug or problem in {project}, and how did you solve it?",
+   "How is {project} deployed, and what happens when a user makes a request — end to end?",
+   "If {project} suddenly had 10 times more users, what would break first and how would you fix it?",
+   "What would you do differently if you rebuilt {project} today?",
+   "How do you handle errors and security (for example authentication or input validation) in {project}?"
+  ],
+  "key_points": [
+   "problem and users",
+   "architecture",
+   "tech choices with reasons",
+   "own contribution",
+   "challenge and fix",
+   "result/metrics",
+   "trade-offs"
+  ]
+ }
+}

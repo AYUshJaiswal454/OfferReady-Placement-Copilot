@@ -1,0 +1,95 @@
+{
+  "journey": "resume + LinkedIn + GitHub + 3 projects + coding + achievements + one 15-min interview (3 scoring runs) + 10 chat questions",
+  "features": {
+    "resume_rewrite": {
+      "calls": 1,
+      "input": 327,
+      "ceiling_output": 900,
+      "typical_output": 650
+    },
+    "linkedin_rewrite": {
+      "calls": 1,
+      "input": 530,
+      "ceiling_output": 900,
+      "typical_output": 600
+    },
+    "code_review": {
+      "calls": 3,
+      "input": 18750,
+      "ceiling_output": 3600,
+      "typical_output": 2700
+    },
+    "interview_turn": {
+      "calls": 26,
+      "input": 18264,
+      "ceiling_output": 7800,
+      "typical_output": 4160
+    },
+    "interview_score": {
+      "calls": 3,
+      "input": 8139,
+      "ceiling_output": 5400,
+      "typical_output": 4500
+    },
+    "chat": {
+      "calls": 20,
+      "input": 12474,
+      "ceiling_output": 12000,
+      "typical_output": 7000
+    }
+  },
+  "totals": {
+    "calls": 54,
+    "input": 58484,
+    "ceiling_output": 30600,
+    "typical_output": 19610
+  },
+  "code_review_input_measured_on_fixtures": 1178,
+  "per_model": {
+    "gpt-6-luna": {
+      "typical_usd": 0.0157,
+      "ceiling_usd": 0.0211,
+      "typical_inr": 1.31,
+      "ceiling_inr": 1.78
+    },
+    "gpt-6.1-sol": {
+      "typical_usd": 0.3131,
+      "ceiling_usd": 0.423,
+      "typical_inr": 26.3,
+      "ceiling_inr": 35.53
+    },
+    "gpt-6-astra": {
+      "typical_usd": 1.5653,
+      "ceiling_usd": 2.1148,
+      "typical_inr": 131.49,
+      "ceiling_inr": 177.65
+    },
+    "gpt-5-mini": {
+      "typical_usd": 0.0538,
+      "ceiling_usd": 0.0758,
+      "typical_inr": 4.52,
+      "ceiling_inr": 6.37
+    },
+    "gpt-4.1-mini": {
+      "typical_usd": 0.0548,
+      "ceiling_usd": 0.0724,
+      "typical_inr": 4.6,
+      "ceiling_inr": 6.08
+    },
+    "gpt-4o-mini": {
+      "typical_usd": 0.0205,
+      "ceiling_usd": 0.0271,
+      "typical_inr": 1.73,
+      "ceiling_inr": 2.28
+    }
+  },
+  "voice_interview_extra": {
+    "candidate_speech_min": 7.5,
+    "interviewer_speech_min": 4.5,
+    "openai_voice_usd": 0.09,
+    "browser_voice_usd": 0.0
+  },
+  "ollama_usd": 0.0,
+  "usd_to_inr": 84.0,
+  "pricing_source": "OpenAI API pricing page (developers.openai.com/api/docs/pricing) and OpenRouter listing, checked 2026-10-18. USD per 1M tokens; audio per minute. Update when prices change."
+}

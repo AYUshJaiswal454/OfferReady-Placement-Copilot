@@ -1,0 +1,16 @@
+{
+  "_note": "Permitted sources only. ATS board tokens are public career-page identifiers; unknown tokens are skipped and shown as unhealthy in Admin > Sources. Add your recruiters' boards here.",
+  "greenhouse": {"enabled": true, "boards": ["postman", "groww", "databricks", "figma", "stripe", "cloudflare", "mongodb", "gitlab", "hackerrank"],
+                 "names": {"postman": "Postman", "groww": "Groww", "databricks": "Databricks", "figma": "Figma", "stripe": "Stripe", "cloudflare": "Cloudflare", "mongodb": "MongoDB", "gitlab": "GitLab", "hackerrank": "HackerRank"}},
+  "lever": {"enabled": true, "companies": ["atlan", "cred", "plaid", "meesho"], "names": {"atlan": "Atlan", "cred": "CRED", "plaid": "Plaid", "meesho": "Meesho"}},
+  "ashby": {"enabled": true, "orgs": ["notion", "ramp", "linear"], "names": {"notion": "Notion", "ramp": "Ramp", "linear": "Linear"}},
+  "smartrecruiters": {"enabled": false, "companies": []},
+  "remotive": {"enabled": true, "categories": ["software-dev", "data"]},
+  "arbeitnow": {"enabled": true},
+  "remoteok": {"enabled": true},
+  "themuse": {"enabled": true, "levels": ["Internship", "Entry Level"], "category": "Software Engineering", "pages": 2},
+  "adzuna": {"enabled": true, "country": "in", "max_queries": 8},
+  "jooble": {"enabled": true, "location": "India", "max_queries": 6},
+  "rss": {"enabled": true, "feeds": [{"name": "We Work Remotely — Programming", "url": "https://weworkremotely.com/categories/remote-programming-jobs.rss", "remote": true}]},
+  "demo": {"enabled": true}
+}
