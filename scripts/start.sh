@@ -9,6 +9,19 @@ PORT="${PORT:-8000}"
 DATA_DIR="${DATA_DIR:-$(pwd)/data}"
 export DATA_DIR
 mkdir -p "$DATA_DIR"
+# Small containers (e.g. Render's free 512 MB plan): headless Chromium does not fit next to the app, so live-link
+# checks use the plain HTTP check unless PLAYWRIGHT_ENABLED is set explicitly.
+if [ -z "${PLAYWRIGHT_ENABLED:-}" ]; then
+  LIMIT=$(cat /sys/fs/cgroup/memory.max 2>/dev/null || cat /sys/fs/cgroup/memory/memory.limit_in_bytes 2>/dev/null || echo max)
+  case "$LIMIT" in
+    ''|max) ;;
+    *) if [ "$LIMIT" -lt 1073741824 ] 2>/dev/null; then
+         export PLAYWRIGHT_ENABLED=false
+         export WORKER_CONCURRENCY="${WORKER_CONCURRENCY:-2}"
+         echo "Memory limit under 1 GB: live-link checks use HTTP, ${WORKER_CONCURRENCY} reviews at a time."
+       fi ;;
+  esac
+fi
 # The web process serves requests only; one separate worker process runs reviews and scheduled jobs.
 export EMBEDDED_WORKER=false
 
