@@ -67,6 +67,14 @@ class HeadersAndMetricsMiddleware:
 
 
 def seed() -> None:
+    try:
+        _seed()
+    except Exception as exc:  # another process (worker, demo seeding) created the same account at the same moment
+        if "UNIQUE" not in str(exc).upper() and "duplicate" not in str(exc).lower():
+            raise
+
+
+def _seed() -> None:
     settings = get_settings()
     db = get_db()
     if not db.fetchone("SELECT id FROM users WHERE email = ?", (settings.admin_email,)):

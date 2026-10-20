@@ -25,9 +25,10 @@ COPY loadtest ./loadtest
 
 RUN useradd --create-home --uid 1000 offerready && mkdir -p /data && chown -R offerready /data /app
 USER offerready
-VOLUME ["/data"]
+# Mount a volume at /data to keep data across restarts (docker-compose does this).
+ENV PORT=8000
 EXPOSE 8000
-HEALTHCHECK --interval=30s --timeout=5s --start-period=20s CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=4)"
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s CMD python -c "import os, urllib.request; urllib.request.urlopen('http://127.0.0.1:%s/api/health' % os.environ.get('PORT', '8000'), timeout=4)"
 
-# Seed the demo data on first start (SEED_DEMO=true), then serve.
-CMD ["sh", "-c", "if [ \"${SEED_DEMO:-true}\" = \"true\" ] && [ ! -f /data/.demo-seeded ]; then python scripts/seed_demo.py && touch /data/.demo-seeded; fi; exec uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers ${WEB_WORKERS:-2} --proxy-headers"]
+# Binds 0.0.0.0:$PORT immediately; loads the demo data in the background on first start (SEED_DEMO=true).
+CMD ["sh", "scripts/start.sh"]

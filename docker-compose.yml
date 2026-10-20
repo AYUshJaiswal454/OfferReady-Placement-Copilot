@@ -19,7 +19,6 @@ services:
       OLLAMA_MODEL_SMART: ${OLLAMA_MODEL:-qwen2.5:7b-instruct}
       DATABASE_URL: ${DATABASE_URL:-}
       TRUST_PROXY: ${TRUST_PROXY:-false}
-      EMBEDDED_WORKER: ${EMBEDDED_WORKER:-true}
     volumes: ["offerready-data:/data"]
     restart: unless-stopped
 

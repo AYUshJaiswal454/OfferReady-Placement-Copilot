@@ -1,0 +1,28 @@
+# Render Blueprint: New > Blueprint > pick this repository. Creates one web service from the Dockerfile.
+# The free plan has 512 MB of memory and no persistent disk: data (including the demo data, which is
+# reloaded on every start) resets when the service restarts or sleeps. Use a paid plan + disk for real use.
+services:
+  - type: web
+    name: offerready
+    runtime: docker
+    plan: free
+    region: singapore
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: SEED_DEMO
+        value: "true"
+      - key: LLM_PROVIDER            # mock = works with no AI key; set to openai and add OPENAI_API_KEY to enable AI
+        value: mock
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: SECRET_KEY              # keeps students signed in across restarts
+        generateValue: true
+      - key: WEB_WORKERS
+        value: "1"
+      - key: WORKER_CONCURRENCY
+        value: "2"
+      - key: PLAYWRIGHT_ENABLED      # headless Chromium needs more than 512 MB; live links use the HTTP check instead
+        value: "false"
+      - key: TRUST_PROXY
+        value: "true"

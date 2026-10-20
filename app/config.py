@@ -61,15 +61,23 @@ def _persisted_secret(data_dir: Path, name: str, factory) -> str:
     if value:
         return value
     path = data_dir / f".{name.lower()}"
-    if path.exists():
-        return path.read_text(encoding="utf-8").strip()
     data_dir.mkdir(parents=True, exist_ok=True)
-    value = factory()
-    path.write_text(value, encoding="utf-8")
     try:
-        path.chmod(0o600)
-    except OSError:
-        pass
+        # O_EXCL: when several processes start together (web server, worker, demo seeding) exactly one creates
+        # the key and the others read it, so files encrypted by one process can be read by the others.
+        fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+    except FileExistsError:
+        for _ in range(50):
+            value = path.read_text(encoding="utf-8").strip()
+            if value:
+                return value
+            import time
+
+            time.sleep(0.05)             # the creating process is still writing it
+        return path.read_text(encoding="utf-8").strip()
+    value = factory()
+    with os.fdopen(fd, "w", encoding="utf-8") as fh:
+        fh.write(value)
     return value
 
 
@@ -82,7 +90,7 @@ def _fernet_key() -> str:
 @dataclass
 class Settings:
     app_env: str = field(default_factory=lambda: env("APP_ENV", "development"))
-    base_url: str = field(default_factory=lambda: env("BASE_URL", "http://localhost:8000"))
+    base_url: str = field(default_factory=lambda: env("BASE_URL", env("RENDER_EXTERNAL_URL", "http://localhost:8000")))
     data_dir: Path = field(default_factory=lambda: Path(env("DATA_DIR", str(ROOT / "data"))).resolve())
     database_url: str = field(default_factory=lambda: env("DATABASE_URL", ""))
 

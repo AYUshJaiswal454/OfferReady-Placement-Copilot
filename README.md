@@ -51,6 +51,13 @@ docker compose up --build                                         # http://local
 LLM_PROVIDER=ollama docker compose --profile local-ai up --build  # with a local model
 ```
 
+**Deploy on Render (free):** in Render choose **New → Blueprint**, pick this repository and click **Apply**.
+`render.yaml` builds the Dockerfile, opens the web port immediately and loads the demo data in the background
+(about 1–3 minutes after the first start). On the free plan, data resets when the service restarts or sleeps.
+Using **New → Web Service** instead also works: pick **Docker** as the runtime, or **Python** with build command
+`pip install -r requirements-dev.txt` and start command `sh scripts/start.sh`. Add `PLAYWRIGHT_ENABLED=false` on
+512 MB instances.
+
 **Demo accounts:** student `demo@student.msot.edu` / `demo12345` (Kabir Mehta, five weeks of history), placement
 cell `admin@msot.edu` / `admin12345`, and 20 cohort students (`student01@msot.edu` … `student20@msot.edu` /
 `student123`).
